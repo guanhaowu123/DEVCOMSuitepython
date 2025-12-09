@@ -13,12 +13,12 @@ cd ./flowsig/
 # Install
 pip3 install .
 
-git clone https://github.com/guanhaowu123/DEVCOM-Suite-python.git
+git clone https://github.com/guanhaowu123/DEVCOMSuitepython.git
 cd DEVCOM-Suite-python
 conda create -n DEVCOMSuitepy -f DEVCOMSuitepy.yaml
 conda activate DEVCOMSuitepy
 
-pip install git+https://github.com/guanhaowu123/DEVCOM-Suite-python.git
+pip install git+https://github.com/guanhaowu123/DEVCOMSuitepython.git
 
 import devcom_suite
 print(devcom_suite.__version__)
