@@ -8,8 +8,8 @@ setup(
     url="https://github.com/guanhaowu123/DEVCOMSuitepython",
     license="MIT",               
     #  python/devcomsuite 
-    packages=["devcomsuite"],
-    package_dir={"devcomsuite": "python"},
+    packages=["DEVCOMSuitepython"],
+    packages=["DEVCOMSuitepython.utils"],
     # install_requires=[
     #     "numpy",
     #     "pandas",
