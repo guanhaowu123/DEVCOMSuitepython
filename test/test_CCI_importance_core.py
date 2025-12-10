@@ -1,4 +1,6 @@
-#from gene_importance import compute_gene_importance_all
+
+import scanpy as sc
+from DEVCOMSuitepython.CCI_importance_core import compute_gene_importance_all
 
 cell_types = ["Endothelial", "Erythrocyte"]
 
