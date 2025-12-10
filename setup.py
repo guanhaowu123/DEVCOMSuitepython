@@ -3,13 +3,11 @@ from setuptools import setup, find_packages
 setup(
     name="DEVCOMSuitepython",         
     version="0.1",
-    description="DEVCOM Suite Python utilities for FlowSig + SURD + DEVCOM.",
     author="Guan Haowu",
     url="https://github.com/guanhaowu123/DEVCOMSuitepython",
     license="MIT",               
     #  python/devcomsuite 
-    packages=["devcomsuite"],
-    package_dir={"devcomsuite": "python"},
+    packages=["DEVCOMSuitepython","DEVCOMSuitepython.utils"],
     # install_requires=[
     #     "numpy",
     #     "pandas",
