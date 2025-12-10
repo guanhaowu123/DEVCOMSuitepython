@@ -5,7 +5,7 @@ import itertools
 from itertools import combinations as icmb
 from itertools import chain as ichain
 from typing import Tuple, Dict
-import it_tools as it
+from . import it_tools as it
 import warnings
 import pymp
 # Suppress all UserWarnings
