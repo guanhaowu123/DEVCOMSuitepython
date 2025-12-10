@@ -1,9 +1,7 @@
 
 import scanpy as sc
-#from flowsig_from_prior import run_flowsig_pipeline
-
+from DEVCOMSuitepython.flowsig_prior_from import run_flowsig_pipeline
 adata = sc.read("/home/wgh/DEVCOM Suite test/tests/testthat/flow/burkhardt21_merged.h5ad")
-
 run_flowsig_pipeline(
     adata,
     prior_csv       = "/home/wgh/DEVCOM Suite test/tests/testthat/flow/human_L-R-TF_develop_filtered_LR_TF_top5000.csv",
