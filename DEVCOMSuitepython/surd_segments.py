@@ -137,11 +137,11 @@ except Exception:
 #     globals()["surd"] = getattr(mod, "surd")
 #     return mod
 
-def load_surd_from_dir(utils_dir: str, module_name: str = "DEVCOMSuitepython.utils.surd"):
-    import importlib
-    mod = importlib.import_module(module_name)
-    globals()["surd"] = getattr(mod, "surd")
-    return mod
+# def load_surd_from_dir(utils_dir: str, module_name: str = "DEVCOMSuitepython.utils.surd"):
+#     import importlib
+#     mod = importlib.import_module(module_name)
+#     globals()["surd"] = getattr(mod, "surd")
+#     return mod
 
 # ===================== Common key candidates =====================
 
