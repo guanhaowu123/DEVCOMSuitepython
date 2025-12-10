@@ -123,20 +123,25 @@ except Exception:
     surd = None  # type: ignore
 
 
-def load_surd_from_dir(utils_dir: str, module_name: str = "surd"):
-    """
-    Add the SURD utils directory to sys.path and import surd().
-    """
-    import sys
-    import importlib
+# def load_surd_from_dir(utils_dir: str, module_name: str = "surd"):
+#     """
+#     Add the SURD utils directory to sys.path and import surd().
+#     """
+#     import sys
+#     import importlib
 
-    utils_dir = os.path.abspath(utils_dir)
-    if utils_dir not in sys.path:
-        sys.path.insert(0, utils_dir)
+#     utils_dir = os.path.abspath(utils_dir)
+#     if utils_dir not in sys.path:
+#         sys.path.insert(0, utils_dir)
+#     mod = importlib.import_module(module_name)
+#     globals()["surd"] = getattr(mod, "surd")
+#     return mod
+
+def load_surd_from_dir(utils_dir: str, module_name: str = "DEVCOMSuitepython.utils.surd"):
+    import importlib
     mod = importlib.import_module(module_name)
     globals()["surd"] = getattr(mod, "surd")
     return mod
-
 
 # ===================== Common key candidates =====================
 
