@@ -1,9 +1,12 @@
 import os
 import scanpy as sc
 
-# 1) Load SURD first (very important)
-#    Here use the path to your local SURD-main/utils directory
-load_surd_from_dir("/home/wgh/SOUD/SURD-main/utils")
+from DEVCOMSuitepython.utils.surd import surd
+from DEVCOMSuitepython.surd_segments import run_surd_k_sweep
+import DEVCOMSuitepython.surd_segments as ss
+ss.surd = surd
+adata = sc.read("/home/wgh/DEVCOM Suite test/tests/testthat/SURD/burkhardt21_merged_flow_learned.h5ad")
+
 
 # 2) Path settings
 DATA_DIR = "/home/wgh/DEVCOM Suite test/tests/testthat/SURD/"
