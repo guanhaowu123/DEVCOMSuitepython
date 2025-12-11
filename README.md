@@ -23,3 +23,4 @@ cd DEVCOMSuitepython
 pip install .
 
 ```
++ https://devcom.readthedocs.io/en/latest/
